@@ -1,6 +1,6 @@
 **!!THIS IS CURRENTLY ENTIRELY UNTESTED!!**
 
-**TODO:** Make and add PCB layout.
+**TODO:** Make a better PCB layout because this one is just a complete mess. But if it works...?
 
 ## Kila
 
