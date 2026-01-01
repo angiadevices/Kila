@@ -5,6 +5,169 @@
 	(uuid "954c53ae-4e80-4776-92ad-ad9b52a802de")
 	(paper "A2")
 	(lib_symbols
+		(symbol "Connector:Conn_01x02_Pin"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x02_Pin"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x02, script generated"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x02_Pin_1_1"
+				(rectangle
+					(start 0.8636 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 0.8636 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 0.8636 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector_Audio:AudioJack2_SwitchT"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -2802,6 +2965,18 @@
 		(uuid 181a23b4-8b82-49fa-b1cd-183ce067fc55)
 	)
 	(rectangle
+		(start 139.7 15.24)
+		(end 181.61 58.42)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 3c9ee81c-0a4e-416d-b0d7-b70eea84a085)
+	)
+	(rectangle
 		(start 471.17 177.8)
 		(end 563.88 326.39)
 		(stroke
@@ -2894,6 +3069,16 @@
 			)
 		)
 		(uuid "117afff5-b8cc-4dc1-9854-3a3d2ebddc88")
+	)
+	(text "USB/External 5V\n"
+		(exclude_from_sim no)
+		(at 161.036 20.066 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "36e9307c-6aac-4d05-8ae9-b67af345c0ad")
 	)
 	(text "Core Inputs"
 		(exclude_from_sim no)
@@ -3152,6 +3337,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9c5ea36a-2c17-493d-8611-b7603ee9f037")
+	)
+	(junction
+		(at 162.56 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ae12c247-2f66-4c1b-bd82-8dd815ec98eb")
 	)
 	(junction
 		(at 424.18 204.47)
@@ -3523,6 +3714,16 @@
 	)
 	(wire
 		(pts
+			(xy 162.56 48.26) (xy 162.56 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24ea758e-41c1-498c-b9fd-16fcef629a7d")
+	)
+	(wire
+		(pts
 			(xy 506.73 140.97) (xy 506.73 153.67)
 		)
 		(stroke
@@ -3790,6 +3991,16 @@
 			(type default)
 		)
 		(uuid "418b5191-b410-48df-ad26-b7375930320e")
+	)
+	(wire
+		(pts
+			(xy 162.56 45.72) (xy 162.56 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44de268e-d388-4a4e-85a3-b8d7249e5a03")
 	)
 	(wire
 		(pts
@@ -4313,6 +4524,16 @@
 	)
 	(wire
 		(pts
+			(xy 149.86 45.72) (xy 151.13 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "802f4a3a-37bd-44f6-89bb-318ba3646b4e")
+	)
+	(wire
+		(pts
 			(xy 17.78 34.29) (xy 17.78 36.83)
 		)
 		(stroke
@@ -4420,6 +4641,16 @@
 			(type default)
 		)
 		(uuid "90420a36-f908-4654-a56c-7055d5cf5700")
+	)
+	(wire
+		(pts
+			(xy 158.75 45.72) (xy 162.56 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "90a4f970-0474-4578-b909-7e93bd4a44ec")
 	)
 	(wire
 		(pts
@@ -5340,6 +5571,16 @@
 			(type default)
 		)
 		(uuid "f9a6128f-82f0-42a3-8fda-e56a7653a292")
+	)
+	(wire
+		(pts
+			(xy 157.48 35.56) (xy 160.02 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fbbd4df1-ac2d-48e6-8f18-6f9539e2d5fd")
 	)
 	(wire
 		(pts
@@ -15135,6 +15376,71 @@
 		(uuid "f0cf2fca-0778-4628-8dc7-aec7f6788267")
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 162.56 48.26 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "06493193-d781-46ad-b98f-81c480e4b3bf")
+		(property "Reference" "#PWR057"
+			(at 162.56 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 162.179 52.6542 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 162.56 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 162.56 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 162.56 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b28bde6f-8491-4583-a848-387606c64f5e")
+		)
+		(instances
+			(project "kastle_arp_euro"
+				(path "/954c53ae-4e80-4776-92ad-ad9b52a802de"
+					(reference "#PWR057")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 429.26 269.24 0)
 		(mirror y)
@@ -15965,7 +16271,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P2.54mm_Vertical_AnodeUp"
+		(property "Footprint" "Diode_SMD:D_MiniMELF_Handsoldering"
 			(at 115.57 194.31 0)
 			(effects
 				(font
@@ -16301,13 +16607,13 @@
 			)
 		)
 		(pin "4"
-			(uuid "bd7544f3-2bee-4574-a594-fef0a4e8420e")
+			(uuid "bd7544f3-2bee-4574-a594-fef0a4e8420f")
 		)
 		(pin "2"
 			(uuid "d31abce7-98e7-4c7b-ad53-63732bbcb376")
 		)
 		(pin "5"
-			(uuid "375205da-8f52-4952-83f3-9ecafea3bfd5")
+			(uuid "375205da-8f52-4952-83f3-9ecafea3bfd6")
 		)
 		(pin "1"
 			(uuid "45034aac-0891-40f1-a828-62bd0b644333")
@@ -16724,6 +17030,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 157.48 35.56 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "321dd637-bfb8-4589-8888-71e2b81e9b9e")
+		(property "Reference" "#PWR059"
+			(at 151.13 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 153.0858 35.687 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 157.48 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 157.48 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 157.48 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bde67aef-9d72-4bbb-bdf9-3bb1c8dc1f64")
+		)
+		(instances
+			(project "kastle_arp_euro"
+				(path "/954c53ae-4e80-4776-92ad-ad9b52a802de"
+					(reference "#PWR059")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Audio:AudioJack2_SwitchT")
 		(at 66.04 200.66 0)
 		(mirror x)
@@ -16824,7 +17195,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P2.54mm_Vertical_AnodeUp"
+		(property "Footprint" "Diode_SMD:D_MiniMELF_Handsoldering"
 			(at 429.26 262.89 0)
 			(effects
 				(font
@@ -16894,7 +17265,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P2.54mm_Vertical_AnodeUp"
+		(property "Footprint" "Diode_SMD:D_MiniMELF_Handsoldering"
 			(at 114.3 320.04 0)
 			(effects
 				(font
@@ -16962,7 +17333,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-323"
+		(property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering"
 			(at 106.68 29.845 0)
 			(effects
 				(font
@@ -17244,7 +17615,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P2.54mm_Vertical_AnodeUp"
+		(property "Footprint" "Diode_SMD:D_MiniMELF_Handsoldering"
 			(at 416.56 307.34 0)
 			(effects
 				(font
@@ -17314,7 +17685,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P2.54mm_Vertical_AnodeUp"
+		(property "Footprint" "Diode_SMD:D_MiniMELF_Handsoldering"
 			(at 114.3 248.92 0)
 			(effects
 				(font
@@ -17422,6 +17793,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 149.86 45.72 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3c20a369-2a6e-45bc-b487-d424fbde2cf0")
+		(property "Reference" "#PWR058"
+			(at 143.51 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 145.4658 45.847 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 149.86 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 149.86 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 149.86 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a9212d8c-1686-404a-b6ae-b0e0b88ccdaa")
+		)
+		(instances
+			(project "kastle_arp_euro"
+				(path "/954c53ae-4e80-4776-92ad-ad9b52a802de"
+					(reference "#PWR058")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "PCM_4ms_Potentiometer:9mm_NoDet_100k_Knurled_Lined")
 		(at 86.36 320.04 0)
 		(mirror x)
@@ -17515,13 +17951,13 @@
 			)
 		)
 		(pin "4"
-			(uuid "bd7544f3-2bee-4574-a594-fef0a4e8420e")
+			(uuid "bd7544f3-2bee-4574-a594-fef0a4e84210")
 		)
 		(pin "2"
 			(uuid "7143b712-794e-4b21-9bc9-414f89280d9b")
 		)
 		(pin "5"
-			(uuid "375205da-8f52-4952-83f3-9ecafea3bfd5")
+			(uuid "375205da-8f52-4952-83f3-9ecafea3bfd7")
 		)
 		(pin "1"
 			(uuid "52e5903f-ecf7-4ed6-9614-a41a57dd83ae")
@@ -18536,13 +18972,13 @@
 			)
 		)
 		(pin "4"
-			(uuid "bd7544f3-2bee-4574-a594-fef0a4e8420f")
+			(uuid "bd7544f3-2bee-4574-a594-fef0a4e84211")
 		)
 		(pin "2"
 			(uuid "2089bda6-c635-4136-9bdb-23185a774b59")
 		)
 		(pin "5"
-			(uuid "375205da-8f52-4952-83f3-9ecafea3bfd6")
+			(uuid "375205da-8f52-4952-83f3-9ecafea3bfd8")
 		)
 		(pin "1"
 			(uuid "00dd2883-c126-4c09-b6dc-95d8548f47d3")
@@ -18986,6 +19422,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 162.56 30.48 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "586db99c-6c36-4ab9-bee9-a3a6f6d992d9")
+		(property "Reference" "J19"
+			(at 163.83 29.8449 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x02_Pin"
+			(at 163.83 32.3849 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical"
+			(at 162.56 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 162.56 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 162.56 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "352be87a-a26f-4da4-a21a-57deace43672")
+		)
+		(pin "2"
+			(uuid "708e52a3-f374-4afd-b400-e2bafc796c93")
+		)
+		(instances
+			(project ""
+				(path "/954c53ae-4e80-4776-92ad-ad9b52a802de"
+					(reference "J19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 114.3 31.75 0)
 		(unit 1)
@@ -19359,7 +19865,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P2.54mm_Vertical_AnodeUp"
+		(property "Footprint" "Diode_SMD:D_MiniMELF_Handsoldering"
 			(at 114.3 306.07 0)
 			(effects
 				(font
@@ -19745,6 +20251,75 @@
 	)
 	(symbol
 		(lib_id "Device:C")
+		(at 154.94 45.72 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "71e84b2f-d95e-466d-a509-e7dee660ea42")
+		(property "Reference" "C11"
+			(at 157.734 52.6034 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "100n"
+			(at 157.734 50.292 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 151.13 46.6852 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 154.94 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 154.94 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cc9e6192-8fd2-4825-8cbc-af87e2d756a9")
+		)
+		(pin "2"
+			(uuid "74c872ac-ef35-41e3-ad85-faf9862c301d")
+		)
+		(instances
+			(project "kastle_arp_euro"
+				(path "/954c53ae-4e80-4776-92ad-ad9b52a802de"
+					(reference "C11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
 		(at 76.2 40.64 0)
 		(mirror y)
 		(unit 1)
@@ -19839,7 +20414,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-323"
+		(property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering"
 			(at 88.9 26.035 0)
 			(effects
 				(font
@@ -20044,7 +20619,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P2.54mm_Vertical_AnodeUp"
+		(property "Footprint" "Diode_SMD:D_MiniMELF_Handsoldering"
 			(at 114.3 262.89 0)
 			(effects
 				(font
@@ -20599,13 +21174,13 @@
 			)
 		)
 		(pin "4"
-			(uuid "bd7544f3-2bee-4574-a594-fef0a4e8420f")
+			(uuid "bd7544f3-2bee-4574-a594-fef0a4e84212")
 		)
 		(pin "2"
 			(uuid "041141c2-96a8-4c20-ab63-be7b2cb97d8b")
 		)
 		(pin "5"
-			(uuid "375205da-8f52-4952-83f3-9ecafea3bfd6")
+			(uuid "375205da-8f52-4952-83f3-9ecafea3bfd9")
 		)
 		(pin "1"
 			(uuid "cea6d7a6-04f0-47a5-b9b0-ea13a3f08638")
@@ -21847,13 +22422,13 @@
 			)
 		)
 		(pin "4"
-			(uuid "bd7544f3-2bee-4574-a594-fef0a4e8420e")
+			(uuid "bd7544f3-2bee-4574-a594-fef0a4e84213")
 		)
 		(pin "2"
 			(uuid "4d462479-e430-4231-a04c-87845faa5bbf")
 		)
 		(pin "5"
-			(uuid "375205da-8f52-4952-83f3-9ecafea3bfd5")
+			(uuid "375205da-8f52-4952-83f3-9ecafea3bfda")
 		)
 		(pin "1"
 			(uuid "2cfc9bb8-e0cf-4241-a211-5c319f233d53")
@@ -22312,13 +22887,13 @@
 			)
 		)
 		(pin "4"
-			(uuid "bd7544f3-2bee-4574-a594-fef0a4e8420f")
+			(uuid "bd7544f3-2bee-4574-a594-fef0a4e84214")
 		)
 		(pin "2"
 			(uuid "f6164d9f-2a17-4781-9291-7b9140005332")
 		)
 		(pin "5"
-			(uuid "375205da-8f52-4952-83f3-9ecafea3bfd6")
+			(uuid "375205da-8f52-4952-83f3-9ecafea3bfdb")
 		)
 		(pin "1"
 			(uuid "bfaa9259-b2d4-4722-81a8-bc0e7b4673d0")
@@ -23448,6 +24023,76 @@
 	)
 	(symbol
 		(lib_id "Diode:1N5819WS")
+		(at 162.56 39.37 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e1eea129-b290-4dc1-bff5-812ada50bdee")
+		(property "Reference" "D16"
+			(at 165.1 38.4174 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N5819WS"
+			(at 165.1 40.9574 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering"
+			(at 167.005 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2204281430_Guangdong-Hottech-1N5819WS_C191023.pdf"
+			(at 162.56 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "40V 600mV@1A 1A SOD-323 Schottky Barrier Diodes, SOD-323"
+			(at 162.56 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "81819b42-b2ed-453a-8c1b-4fca36714b6d")
+		)
+		(pin "1"
+			(uuid "8064a2b9-b105-482d-8661-339e3e9cd2b6")
+		)
+		(instances
+			(project "kastle_arp_euro"
+				(path "/954c53ae-4e80-4776-92ad-ad9b52a802de"
+					(reference "D16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N5819WS")
 		(at 40.64 29.21 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -23472,7 +24117,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-323"
+		(property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering"
 			(at 40.64 24.765 0)
 			(effects
 				(font
@@ -23607,7 +24252,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P2.54mm_Vertical_AnodeUp"
+		(property "Footprint" "Diode_SMD:D_MiniMELF_Handsoldering"
 			(at 109.22 153.67 0)
 			(effects
 				(font
@@ -23882,13 +24527,13 @@
 			)
 		)
 		(pin "4"
-			(uuid "bd7544f3-2bee-4574-a594-fef0a4e8420e")
+			(uuid "bd7544f3-2bee-4574-a594-fef0a4e84215")
 		)
 		(pin "2"
 			(uuid "6091132f-daf7-437b-b9fa-b063d84cfc51")
 		)
 		(pin "5"
-			(uuid "375205da-8f52-4952-83f3-9ecafea3bfd5")
+			(uuid "375205da-8f52-4952-83f3-9ecafea3bfdc")
 		)
 		(pin "1"
 			(uuid "ae1bbcc9-d028-43c3-8bd8-8dc1a85397fc")
@@ -24129,7 +24774,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P2.54mm_Vertical_AnodeUp"
+		(property "Footprint" "Diode_SMD:D_MiniMELF_Handsoldering"
 			(at 436.88 204.47 0)
 			(effects
 				(font
@@ -24199,7 +24844,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P2.54mm_Vertical_AnodeUp"
+		(property "Footprint" "Diode_SMD:D_MiniMELF_Handsoldering"
 			(at 115.57 208.28 0)
 			(effects
 				(font
@@ -24334,7 +24979,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P2.54mm_Vertical_AnodeUp"
+		(property "Footprint" "Diode_SMD:D_MiniMELF_Handsoldering"
 			(at 436.88 218.44 0)
 			(effects
 				(font
